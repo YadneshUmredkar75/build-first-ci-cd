@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    image: cicd-demo:local
+    ports:
+      - "3000:3000"
+    environment:
+      APP_ENV: ${APP_ENV:-local}
+    restart: unless-stopped

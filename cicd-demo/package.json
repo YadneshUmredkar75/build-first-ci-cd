@@ -1,0 +1,16 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "description": "Small Node.js API used to practise CI/CD with Docker",
+  "main": "src/server.js",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "lint": "node scripts/lint.js",
+    "ci": "npm run lint && npm test"
+  },
+  "license": "MIT"
+}
